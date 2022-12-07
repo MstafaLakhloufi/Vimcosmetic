@@ -1,0 +1,461 @@
+@font-face {
+    font-family: 'Lateef';
+    src: url(../fonts/Lateef-Regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFFFFF;
+    color: black;
+    font-family: 'Lateef', sans-serif;
+}
+
+header {
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 0 35px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+header.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    padding: 0 35px;
+    padding-top: 15px;
+    background-color: rgba(185, 175, 255, 0.5);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    transition: all 0.5s;
+}
+#logo {
+    font-weight: bold;
+    font-size: 48px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+#logo a {
+    color: black;
+}
+ul {
+    font-size: 32px;
+    font-weight: 400;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+ul li a.active,
+ul li a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+#cart {
+    padding: 5px 8px;
+    color: white;
+    cursor: pointer;
+}
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+#hamburger-icon  div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.6s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.5s;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: #FFFFFF;
+    height: fit-content;
+    z-index: 3;
+}
+.mobile-menu li {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.mobile-menu li a {
+    color: #000000;
+} 
+
+@media only screen and (max-width: 751px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+    display: block;
+    }
+}
+
+.landing {
+    background-image: url(../images/about/pexels-maria-camila-castaño-7712475\ 1.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing .content {
+    position: absolute;
+    width: 306px;
+    height: 167px;
+    top: 221px;
+}
+.landing .content h1 {
+    transform: translateY(-50%);
+    color: white;
+    font-size: 150px;
+    font-weight: 400;
+} 
+.about {
+    padding-top: 70px;
+}
+.about .content{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 90%;
+}
+.about .content img {
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.about .content .info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.about .content .info h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.about .content .info p {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.about .content .info button {
+    width: 199px;
+    height: 68px;
+    border: 1px solid #E6F2FF;
+    background-color: #E6F2FF;
+    border-radius: 50px;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Lateef', sans-serif;
+    color: #00B4FF;
+}
+@media only screen and (max-width: 1029px) {
+    .about .content img {
+        height: 350px;
+    }
+    .about .content .info {
+    margin-top: 14px;
+    }
+    .about .content .info h2 {
+        font-size: 40px;
+    }
+    .about .content .info p {
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+@media only screen and (max-width: 920px) {
+    .about .content {
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .about .content .info {
+        align-items: center;
+    }
+    .about .content .info p {
+        padding-right: 25px;
+    }
+    .about .content img {
+        height: 300px;
+    }
+}
+.trusted {
+    margin-top: 115px;
+    margin-bottom: 100px;
+}
+.trusted .icons .row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    align-items: center;
+}
+.trusted .icons .row .text {
+    width: 610px;
+    height: 272px;
+}
+.trusted .icons .row .text h2 {
+    font-size: 120px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 135px;
+}
+@media only screen and (max-width: 692px) {
+    .trusted .icons .row .text {
+        width: 310px;
+        height: 145px;
+    }
+    .trusted .icons .row .text h2 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+.beauty {
+    margin-bottom: 100px;
+}
+.beauty .beauty-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    padding-right: 80px;
+}
+.beauty .beauty-content .info h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.beauty .beauty-content .info p {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.beauty .beauty-content .info button {
+    width: 199px;
+    height: 68px;
+    border: 1px solid #00B4FF;
+    background-color: #00B4FF;
+    border-radius: 30px;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Lateef', sans-serif;
+    color: #FFFFFF;
+}
+@media only screen and (max-width: 1029px) {
+    .beauty .beauty-content img {
+        height: 350px;
+        margin-top: 30px;
+    }
+    .beauty .beauty-content .info {
+    margin-top: 14px;
+    }
+    .beauty .beauty-content .info h2 {
+        font-size: 40px;
+    }
+    .beauty .beauty-content .info p {
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+@media only screen and (max-width: 920px) {
+    .beauty .beauty-content {
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .beauty .beauty-content .info {
+        align-items: center;
+    }
+    .beauty .beauty-content .info p {
+        padding-right: 25px;
+    }
+    .beauty .beauty-content img {
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .beauty .beauty-content .info {
+        align-items: center;
+    }
+    .beauty .beauty-content .info p {
+        padding-right: 25px;
+    }
+    .beauty .beauty-content img {
+        height: 300px;
+    }
+}
+
+.why-vim {
+    margin-top: 115px;
+    margin-bottom: 100px;
+}
+.why-vim .icons .row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    align-items: center;
+}
+.why-vim .icons .row .text {
+    width: 395px;
+    height: 272px;
+}
+.why-vim .icons .row .text h2 {
+    font-size: 120px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 135px;
+}
+@media only screen and (max-width: 500px) {
+    .why-vim .icons .row .text {
+        width: 220px;
+        height: 120px;
+    }
+    .why-vim .icons .row .text h2 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+.advantages {
+    margin-top: 80px;
+    margin-bottom: 115px;
+}
+.advantages .adv-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 25px;
+}
+
+.footer {
+    min-height: 100vh;
+    background-image: url(../images/home/pexels-shiny.png);
+    background-size: cover;
+    position: relative;
+    margin-top: 80px;
+}
+.footer .content .subscribe {
+    display: block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 50%);
+    margin-bottom: 260px;
+}
+.footer .content .subscribe h2{
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Lateef', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.footer .content .subscribe form input {
+    width: 671px;
+    height: 66px;
+    border: 1px solid #E9F6FF;
+    border-radius: 35px;
+    margin-bottom: 30px;
+}
+.footer .content .subscribe form ::placeholder {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Lateef', sans-serif;
+    color: #00BAD4;
+    padding: 20px 20px 20px 60px;
+}
+.footer .content .subscribe button {
+    width: 671px;
+    height: 66px;
+    border: 1px solid #00B1D4;
+    background-color: #00B1D4;
+    border-radius: 60px;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Lateef', sans-serif;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.footer .content .copy-right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-family: 'Lateef', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+@media only screen and (max-width: 792px) {
+    .footer .content .subscribe form input {
+        width: 60%;
+    }
+    .footer .content .subscribe button{
+        width: 60%;
+    }
+    .footer .content .copy-right {
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+}

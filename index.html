@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/home.css" />
+        <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> 
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>الصفحة الرئيسية</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="header">
+            <div id="logo"<a href="/">Vim</a></div>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">الصفحة الرئيسية</a></li>
+                        <li><a href="pages/shop.html">المتجر</a></li>
+                        <li><a href="pages/about.html">من نحن</a></li>
+                        <li><a href="pages/contact.html">تواصل معنا</a></li>
+                        <li id="cart" onclick="openNav()">
+                            <img src="images/home/cart-1-svgrepo-com 1.png"> 
+                        </li>
+                    </ul>
+                </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a class="active" href="index.html">الصفحة الرئيسية</a></li>
+                    <li><a href="pages/shop.html">المتجر</a></li>
+                    <li><a href="pages/about.html">من نحن</a></li>
+                    <li><a href="pages/contact.html">تواصل معنا</a></li>
+                    <li id="cart" onclick="openNav()">
+                        <img src="images/home/cart-1-svgrepo-com 1.png">
+                    </li>
+                </ul>
+            </div> 
+        </header>
+        <!-- <div class="loading">
+            <div class="percent"100%></div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div> -->
+        </div>
+        <div class="landing">
+            <div class="content">
+                <h1>مستحضرات العناية والتجميل</h1>
+            </div>
+        </div>
+        <div class="made-of">
+            <div class="container">
+                <div class="content">
+                    <img src="images/home/akbari.png">
+                    <div class="info">
+                        <h2>مصنوع من مواد عضوية</h2>
+                        <p>اشعر بالرضا عن نفسك مع تركيبتنا النباتية 100% الخالية من الفثالات والبارابين والتريكلوسان والتريكلوكاربان والهيدروكينون.</p>
+                        <button>تصفح المنتجات</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products" data-aos="fade-right" data-aos-duration="1000">
+            <div class="container">
+                <h2>المنتجات الرائجة</h2>
+                <div class="products-content">
+                    <img src="images/home/Pixi.png">
+                    <img src="images/home/Kenzoki.png">
+                    <img src="images/home/Illia.png">
+                    <img src="images/home/Fenty.png">
+                </div>
+            </div>
+        </div>
+        <div class="products" data-aos="fade-left" data-aos-duration="1000">
+        <div class="special" >
+            <div class="container">
+                <div class="special-content">
+                    <div class="info">
+                        <h2>كن استثنائي دون دفع إضافات</h2>
+                        <p>معنا، ستحصل على منتجات عالية الجودة بأسعار واقعية.
+                           ملاحظاتك ومراجعاتك توجه كل شيء نحصل عليه على أفضل وجه دون تفريغ المحفظة.
+                        </p>    
+                        <button>تصفح المنتجات</button> 
+                    </div>
+                    <img src="images/home/PHOTO 02.png">
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="container">
+                <h2>آراء العملاء</h2>
+                <div class="reviews-content">
+                    <div class="reviews-box" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="images/home/Review 05.png">
+                        <img src="images/home/Review 02.png">
+                    </div>
+                    <div class="reviews-box" data-aos="fade-left" data-aos-duration="1500">
+                        <img src="images/home/Review 06.png">
+                        <img src="images/home/Review 05.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="deliver-system" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <div class="content">
+                    <img src="images/home/PHOTO 03.png"> 
+                    <div class="info">
+                        <h2>نظام توصيل فائق السرعة</h2>
+                        <p>نحن نتحدث عن التسليم السريع وخدمة العملاء التي لا تقبل المنافسة والإرجاع البسيط. نحن نشحن إلى أكثر من 120 دولة وما زال العدد في ازدياد. بالإضافة إلى ذلك، يوفر برنامج الولاء لدينا بعض المكافآت المجنونة لعملائنا من كبار الشخصيات.</p>
+                        <button>تصفح المنتجات</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="why-vim">
+            <div class="container">
+                <div class="icons">
+                    <div class="row">
+                        <img src="images/home/ICON MAKEUP 03.png">
+                        <img src="images/home/ICON MAKEUP 02.png">
+                    </div>
+                    <div class="row">
+                        <img src="images/home/ICON MAKEUP 04.png">
+                        <div class="text">
+                            <h2>لماذا عليك اختيار Vim</h2>
+                        </div> 
+                        <img src="images/home/ICON MAKEUP 01.png">
+                    </div>
+                    <div class="row">
+                        <img src="images/home/ICON MAKEUP 05.png">
+                        <img src="images/home/ICON MAKEUP 06.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages">
+            <div class="container">
+                <div class="adv-content">
+                    <img src="images/home/أفضل الماركات.png">
+                    <img src="images/home/جيد للبشرة.png">
+                    <img src="images/home/سهل التسوق.png">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="content">
+                    <div class="subscribe">
+                        <h2>اشترك في النشرات الإخبارية</h2>
+                        <form action="">
+                            <input type="email" name="mail" placeholder="البريد الإلكتروني" />
+                        </form>
+                        <button>اشترك</button>
+                    </div>
+                    <div class="copy-right">
+                        <p dir="ltr">&copy; 2022 Copyright by vamill agency rights reserved </p>
+                        <p>Privacy policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </body>
+</html>

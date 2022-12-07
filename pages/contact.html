@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/contact.css" />
+        <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>تواصل معنا</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="header">
+            <div id="logo"<a href="/">Vim</a></div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">الصفحة الرئيسية</a></li>
+                        <li><a href="shop.html">المتجر</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a class="active" href="contact.html">تواصل معنا</a></li>
+                        <li id="cart" onclick="openNav()">
+                            <img src="../images/contact/cart-1-svgrepo-com 1.png"> 
+                        </li>
+                    </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="../index.html">الصفحة الرئيسية</a></li>
+                    <li><a href="shop.html">المتجر</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a class="active" href="pages/contact.html">تواصل معنا</a></li>
+                    <li id="cart" onclick="openNav()">
+                        <img src="../images/contact/cart-1-svgrepo-com 1.png">
+                    </li>
+                </ul>
+            </div> 
+        </header>
+        <div class="landing">
+            <div class="contact">
+                <h1>تواصل معنا</h1>
+                <div class="contact-form">
+                    <form>
+                        <input type="name" placeholder="الإسم"/>
+                        <input type="email" placeholder="البريد الإلكتروني"/>
+                        <input type="text" placeholder="الرسالة"/>
+                        <div class="confirm">
+                            <div class="radio">
+                                <input class="radio-input" type="radio" value="male"/>
+                                <span>لقد قرأت ووافقت على سياسة الخصوصية</span>
+                            </div>
+                            <input class="submit" type="submit" value="ارسل"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+        <div class="footer">
+            <div class="container">
+                <div class="content">
+                    <div class="subscribe">
+                        <h2>اشترك في النشرات الإخبارية</h2>
+                        <form action="">
+                            <input type="email" name="mail" placeholder="البريد الإلكتروني" />
+                        </form>
+                        <button>اشترك</button>
+                    </div>
+                    <div class="copy-right">
+                        <p dir="ltr">&copy; 2022 Copyright by vamill agency rights reserved </p>
+                        <p>Privacy policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../scripts/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </body>
+</html>
